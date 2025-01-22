@@ -11,3 +11,12 @@ const reverseList = (head) => {
 
 	return prev;
 };
+
+// recursive:
+// const reverseList = (head, prev = null) => {
+//     if(head === null) return prev;
+//     let next = head.next;
+//     head.next = prev;
+//     prev = head;
+//     return reverseList(next, prev)
+//   };
